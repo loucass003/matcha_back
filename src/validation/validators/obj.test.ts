@@ -60,16 +60,13 @@ describe('validators', () => {
     describe('keys() error handling', () => {
       test('should throw a non-validation error immediately', () => {
         class TestError extends Error {}
-
-        try {
+        expect(() => {
           obj.keys({
             a: wrap<unknown, string>('testerror', () => {
               throw new TestError();
             }),
           })({ a: 0 });
-        } catch (error) {
-          expect(error).toBeInstanceOf(TestError);
-        }
+        }).toThrowError(TestError);
       });
 
       test('should throw validation error with object reason', () => {
