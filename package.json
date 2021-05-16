@@ -55,7 +55,7 @@
     "*.{js,ts}": [
       "prettier --write",
       "eslint --fix",
-      "jest -o"
+      "jest --findRelatedTests"
     ]
   },
   "nodemonConfig": {
