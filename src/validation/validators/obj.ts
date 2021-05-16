@@ -198,7 +198,7 @@ export const xor = <X extends Record<string, unknown>>(fields: (keyof X)[]) => w
       .reduce((a, i) => a + i, 0);
 
     return xorValue === 1;
-  }, `value must have only one field present of ${fields.join(', ')}`),
+  }, `value must have only one field present of  ${fields.join(', ')}`),
 );
 
 /**

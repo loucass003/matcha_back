@@ -7,6 +7,7 @@
     "start": "node --inspect=0.0.0.0 -r ts-node/register src/index.ts",
     "watch": "nodemon",
     "lint": "eslint . --ext .ts",
+    "test": "jest",
     "prepare": "husky install"
   },
   "repository": {
@@ -53,7 +54,8 @@
   "lint-staged": {
     "*.{js,ts}": [
       "prettier --write",
-      "eslint --fix"
+      "eslint --fix",
+      "jest --bail --findRelatedTests"
     ]
   },
   "nodemonConfig": {
