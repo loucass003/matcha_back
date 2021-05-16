@@ -7,11 +7,5 @@ import { required } from './validators/required';
 import { optional } from './validators/optional';
 
 export {
-  array,
-  obj,
-  bool,
-  num,
-  str,
-  required,
-  optional,
+  array, obj, bool, num, str, required, optional,
 };

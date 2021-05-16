@@ -21,7 +21,19 @@ describe('validators', () => {
     describe('isInteger', () => {
       assert(num.isInteger(), {
         positive: [0, 0.0, -0.0, 1.0, -1.0, 1.0, -1.0, 1, -1],
-        negative: [0.1, -0.1, NaN, false, '', '-1', '0', '1', {}, [], new Number(0)],
+        negative: [
+          0.1,
+          -0.1,
+          NaN,
+          false,
+          '',
+          '-1',
+          '0',
+          '1',
+          {},
+          [],
+          new Number(0),
+        ],
       });
     });
 
@@ -54,14 +66,29 @@ describe('validators', () => {
 
     describe('parse (with throwOnNaN set to true)', () => {
       transform(num.parse({ throwOnNaN: true }), {
-        positive: [['0', 0], ['1', 1], ['-1', -1], ['+1', 1], ['-1.23', -1.23]],
+        positive: [
+          ['0', 0],
+          ['1', 1],
+          ['-1', -1],
+          ['+1', 1],
+          ['-1.23', -1.23],
+        ],
         negative: ['not-a-number'],
       });
     });
 
     describe('integer', () => {
       transform(num.integer(), {
-        positive: [[0, 0], [1, 1], [-1, -1], [NaN, NaN], [0.1, 0], [-0.1, 0], [1.1, 1], [-1.1, -1]],
+        positive: [
+          [0, 0],
+          [1, 1],
+          [-1, -1],
+          [NaN, NaN],
+          [0.1, 0],
+          [-0.1, 0],
+          [1.1, 1],
+          [-1.1, -1],
+        ],
       });
     });
   });

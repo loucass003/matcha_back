@@ -48,7 +48,13 @@ describe('validators', () => {
 
     describe("regex(/^[^a]?(a?)[^a]?$/, '$1')", () => {
       transform(str.regex(/^[^a]?(a?)[^a]?$/, '$1'), {
-        positive: [['', ''], ['a', 'a'], [' a', 'a'], ['a ', 'a'], [' a ', 'a']],
+        positive: [
+          ['', ''],
+          ['a', 'a'],
+          [' a', 'a'],
+          ['a ', 'a'],
+          [' a ', 'a'],
+        ],
         negative: ['aba'],
       });
     });

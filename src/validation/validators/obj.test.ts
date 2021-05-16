@@ -11,7 +11,14 @@ describe('validators', () => {
   describe('obj', () => {
     describe('is()', () => {
       assert(obj.is(), {
-        positive: [[], {}, new Date(), new String('hello'), new Number(1), new Boolean(false)],
+        positive: [
+          [],
+          {},
+          new Date(),
+          new String('hello'),
+          new Number(1),
+          new Boolean(false),
+        ],
         negative: [NaN, false, '', 0],
       });
     });
@@ -19,7 +26,11 @@ describe('validators', () => {
     describe('isplain()', () => {
       assert(obj.isplain(), {
         positive: [{}, { actAsObject: true, __proto__: Object.prototype }],
-        negative: [{ actAsFunction: true, __proto__: Function.prototype }, [], new String()],
+        negative: [
+          { actAsFunction: true, __proto__: Function.prototype },
+          [],
+          new String(),
+        ],
       });
     });
 
@@ -30,7 +41,10 @@ describe('validators', () => {
           b: required().and(num.is()),
         }),
         {
-          positive: [{ a: '', b: 0 }, { a: 'hello', b: 2 }],
+          positive: [
+            { a: '', b: 0 },
+            { a: 'hello', b: 2 },
+          ],
           negative: [
             { a: 'a', b: 0, c: 'c' },
             { a: 0, b: 0 },
@@ -111,7 +125,10 @@ describe('validators', () => {
           { lenient: true },
         ),
         {
-          positive: [{ a: 1, b: '1' }, { a: 1, b: '1', c: '2' }],
+          positive: [
+            { a: 1, b: '1' },
+            { a: 1, b: '1', c: '2' },
+          ],
           negative: [{}, { a: 1 }, { b: '1' }, { a: '1', b: '1' }, { c: 1 }],
         },
       );
@@ -119,15 +136,28 @@ describe('validators', () => {
 
     describe("xor(['a', 'b'])", () => {
       assert(obj.xor(['a', 'b']), {
-        positive: [{ a: 0, c: 1 }, { b: 0, c: 1 }],
+        positive: [
+          { a: 0, c: 1 },
+          { b: 0, c: 1 },
+        ],
         negative: [{ a: 0, b: 1 }, { a: 0, b: 1, c: 2 }, { c: 0 }, {}],
       });
     });
 
     describe("and(['a', 'b'])", () => {
       assert(obj.and(['a', 'b']), {
-        positive: [{ a: 0, b: 1 }, { a: 0, b: 1, c: 2 }],
-        negative: [{}, { a: 0 }, { b: 0 }, { c: 1 }, { a: 0, c: 1 }, { b: 0, c: 2 }],
+        positive: [
+          { a: 0, b: 1 },
+          { a: 0, b: 1, c: 2 },
+        ],
+        negative: [
+          {},
+          { a: 0 },
+          { b: 0 },
+          { c: 1 },
+          { a: 0, c: 1 },
+          { b: 0, c: 2 },
+        ],
       });
     });
 

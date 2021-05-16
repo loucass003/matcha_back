@@ -5,9 +5,9 @@ import { Validator } from '../Validator';
 export function assert(
   validator: Validator<any, any>,
   options: {
-      positive?: any[];
-      negative?: any[];
-    },
+    positive?: any[];
+    negative?: any[];
+  },
   lenient = false,
 ) {
   if (!lenient) {
@@ -40,7 +40,10 @@ export function equality(a: any, b: any): boolean {
   }
 
   if (Array.isArray(a) && Array.isArray(b)) {
-    return a.length === b.length && a.reduce((c, i, index) => c && i === b[index], true);
+    return (
+      a.length === b.length
+      && a.reduce((c, i, index) => c && i === b[index], true)
+    );
   }
 
   if (a instanceof Date && b instanceof Date) {

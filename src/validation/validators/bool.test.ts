@@ -14,14 +14,38 @@ describe('validators', () => {
     describe('truth', () => {
       assert(bool.truth(), {
         positive: [true],
-        negative: [false, 0, 1, -1, NaN, '', 'a', {}, [], new Boolean(false), new Boolean(true)],
+        negative: [
+          false,
+          0,
+          1,
+          -1,
+          NaN,
+          '',
+          'a',
+          {},
+          [],
+          new Boolean(false),
+          new Boolean(true),
+        ],
       });
     });
 
     describe('falseness', () => {
       assert(bool.falseness(), {
         positive: [false],
-        negative: [true, 0, -1, 1, NaN, '', 'a', {}, [], new Boolean(true), new Boolean(false)],
+        negative: [
+          true,
+          0,
+          -1,
+          1,
+          NaN,
+          '',
+          'a',
+          {},
+          [],
+          new Boolean(true),
+          new Boolean(false),
+        ],
       });
     });
 
@@ -40,7 +64,7 @@ describe('validators', () => {
           ['', false],
           [false, false],
           [NaN, false],
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
         ] as any,
       });
     });
@@ -60,7 +84,7 @@ describe('validators', () => {
           ['', true],
           [false, true],
           [NaN, true],
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
         ] as any,
       });
     });

@@ -2,9 +2,7 @@ import { attachControllers } from '@decorators/express';
 import express, { Application } from 'express';
 import controllers from './controllers';
 
-const {
-  PORT = 3000,
-} = process.env;
+const { PORT = 3000 } = process.env;
 
 export class Main {
   public app?: Application;

@@ -20,7 +20,5 @@
     "target": "es6",
     "noUnusedParameters": true
   },
-  "include": [
-    "./src/**/*"
-  ]
+  "include": ["./src/**/*"]
 }
