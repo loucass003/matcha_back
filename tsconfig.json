@@ -10,7 +10,7 @@
     "moduleResolution": "node",
     "noEmitOnError": true,
     "noImplicitReturns": true,
-    "noUnusedLocals": true,
+    "noUnusedLocals": false,
     "outDir": "dist",
     "removeComments": true,
     "resolveJsonModule": true,
@@ -18,7 +18,8 @@
     "sourceMap": true,
     "strict": true,
     "target": "es6",
-    "noUnusedParameters": true
+    "noUnusedParameters": false,
+    "typeRoots": ["./node_modules/@types"]
   },
   "include": ["./src/**/*"]
 }

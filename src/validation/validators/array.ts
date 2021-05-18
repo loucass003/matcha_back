@@ -53,10 +53,11 @@ export const items = <Y, X extends Y[], Z>(i: Validator<Y, Z>) => wrap<X, Z[]>('
       // eslint-disable-next-line no-loop-func
       isError(error, ValidationError, () => {
         if (!reasons) {
-          reasons = new Array(value.length);
+          reasons = [];
         }
-
-        reasons[index] = error;
+        reasons.push(
+          new ValidationError(error.message, error.value, undefined, index),
+        );
       });
     }
   }

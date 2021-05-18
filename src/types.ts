@@ -1,8 +1,8 @@
-import { NextFunction, Request, Response } from 'express';
+import { Request } from 'express';
+import { Client } from 'pg';
+import { Session } from './auth/Session';
 
-export type Location = 'body' | 'cookies' | 'headers' | 'params' | 'query';
-export type ExpressMiddleware = (
-  req: Request,
-  res: Response,
-  next: NextFunction
-) => void;
+export type AppRequest = Request & {
+  session?: Session;
+  db: Client;
+};

@@ -1,23 +1,50 @@
 import {
-  Controller, Get, Query, Response,
+  Body,
+  Controller,
+  Params,
+  Post,
+  Request,
+  Response,
 } from '@decorators/express';
 import express from 'express';
+import { createToken, setAuthHeaders } from '../auth';
 import { ValidationMiddleware } from '../middlewares/ValidationMiddleware';
-import { required, str } from '../validation';
+import { AppRequest } from '../types';
+import {
+  array, num, required, str,
+} from '../validation';
 
 @Controller('/')
 export class TestController {
-  @Get('/hello', [ValidationMiddleware('CA MARCHE !!!!!!')])
-  hello(@Response() res: express.Response, @Query('word') word: string) {
-    const isValid = required().and(str.is()).and(str.length(1, 3));
-    console.log(isValid(word));
-    res.send(`hello ${word}`);
+  @Post('/hello/:id', [
+    ValidationMiddleware({
+      params: {
+        id: required().and(str.is()).and(num.parse()).and(num.min(5)),
+      },
+      body: {
+        data: required().and(array.is()).and(array.items(num.is())),
+        toto: required().and(str.is()).and(str.min(3)),
+      },
+    }),
+  ])
+  hello(
+    @Request() { session, db }: AppRequest,
+    @Response() res: express.Response,
+    @Body('data') data: number[],
+    @Params('id') id: number,
+  ) {
+    res.send(
+      `hello ${data} ${id} Session ${session ? session.username : 'no'}`,
+    );
+    console.log(db);
   }
 
-  @Get('/hello2', [ValidationMiddleware('YAY')])
-  hello2(@Response() res: express.Response, @Query('word') word: string) {
-    const isValid = required().and(str.is()).and(str.length(1, 3));
-    console.log(isValid(word));
-    res.send(`hello ${word}`);
+  @Post('/login/:username')
+  login(
+    @Response() res: express.Response,
+    @Params('username') username: string,
+  ) {
+    setAuthHeaders(res, createToken({ username }));
+    res.sendStatus(200);
   }
 }

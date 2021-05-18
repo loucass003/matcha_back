@@ -12,11 +12,11 @@ export function assert(
 ) {
   if (!lenient) {
     test('should allow null', () => {
-      expect(validator(null)).toBe(null);
+      expect(() => validator(null)).not.toThrow();
     });
 
     test('should allow undefined', () => {
-      expect(validator(undefined)).toBe(undefined);
+      expect(() => validator(undefined)).not.toThrow();
     });
   }
 

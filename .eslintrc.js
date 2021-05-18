@@ -23,6 +23,9 @@ module.exports = {
     'max-classes-per-file': ['error', 4],
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     'no-loop-func': 'off',
+    'no-restricted-syntax': 'off',
+    'no-shadow': 'off',
+    '@typescript-eslint/no-shadow': 'error',
   },
   settings: {
     'import/resolver': {
