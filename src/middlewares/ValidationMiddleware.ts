@@ -1,11 +1,11 @@
-import { Middleware } from '@decorators/express';
-import { Request, Response, NextFunction } from 'express';
-import { ValidationMiddlewareError } from '../errors/ValidationMiddlewareError';
+import { Middleware } from "@decorators/express";
+import { Request, Response, NextFunction } from "express";
+import { ValidationMiddlewareError } from "../errors/ValidationMiddlewareError";
 import {
   ValidationError,
   ValidationErrorWithField,
-} from '../validation/ValidationError';
-import { Validator } from '../validation/Validator';
+} from "../validation/ValidationError";
+import { Validator } from "../validation/Validator";
 
 export interface RulesBase {
   query?: Record<string, Validator<any, any>>;
@@ -18,9 +18,7 @@ export interface RulesBase {
 export function ValidationMiddleware(rules: RulesBase): any {
   class ValidationMiddlewareClass implements Middleware {
     public use(req: Request, res: Response, next: NextFunction): void {
-      const {
-        query, body, cookies, headers, params,
-      } = req;
+      const { query, body, cookies, headers, params } = req;
 
       const reqFields = {
         query,
@@ -36,7 +34,7 @@ export function ValidationMiddleware(rules: RulesBase): any {
           const testField = reqFields[key][fieldName];
           try {
             reqFields[key][fieldName] = (rule as Validator<any, any>)(
-              testField,
+              testField
             );
           } catch (error) {
             if (!(error instanceof ValidationError)) {
@@ -46,16 +44,16 @@ export function ValidationMiddleware(rules: RulesBase): any {
             if (error.reasons) {
               if (Array.isArray(error.reasons)) {
                 error.reasons.forEach(
-                  (reason: ValidationError) => delete reason.value,
+                  (reason: ValidationError) => delete reason.value
                 );
               } else {
                 Object.keys(error.reasons).forEach(
-                  (k: string | number) => delete error.reasons[k],
+                  (k: string | number) => delete error.reasons[k]
                 );
               }
             }
             errors.push(
-              new ValidationErrorWithField(`${key}.${fieldName}`, error),
+              new ValidationErrorWithField(`${key}.${fieldName}`, error)
             );
           }
         }

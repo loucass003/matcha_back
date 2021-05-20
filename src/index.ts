@@ -1,10 +1,10 @@
-import { attachControllers } from '@decorators/express';
-import express, { Application } from 'express';
-import { Client } from 'pg';
-import controllers from './controllers';
-import { logger, loggerMiddleware } from './logger';
-import { jwtSessionMiddleware } from './auth/middleware';
-import { databaseMiddleware } from './database/middleware';
+import { attachControllers } from "@decorators/express";
+import express, { Application } from "express";
+import { Client } from "pg";
+import controllers from "./controllers";
+import { logger, loggerMiddleware } from "./logger";
+import { jwtSessionMiddleware } from "./auth/middleware";
+import { databaseMiddleware } from "./database/middleware";
 
 export { logger };
 
@@ -28,7 +28,7 @@ export class Main {
       connectionString: POSTGRES_DSN,
     });
     await this.db_client.connect();
-    logger.info('Connected to database');
+    logger.info("Connected to database");
 
     this.app = express();
 

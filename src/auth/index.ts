@@ -1,9 +1,9 @@
-import { Response } from 'express';
-import jwt from 'jsonwebtoken';
-import { JWT_SECRET } from '../index';
+import { Response } from "express";
+import jwt from "jsonwebtoken";
+import { JWT_SECRET } from "../index";
 
 export function createToken(data: any, secret: string = JWT_SECRET) {
-  return jwt.sign({ data }, secret, { expiresIn: '15m' });
+  return jwt.sign({ data }, secret, { expiresIn: "15m" });
 }
 
 export function verifyToken(token: string, secret: string = JWT_SECRET): any {
@@ -15,5 +15,5 @@ export function verifyToken(token: string, secret: string = JWT_SECRET): any {
 }
 
 export function setAuthHeaders(res: Response, token: string) {
-  res.setHeader('Authorization', `Bearer ${token}`);
+  res.setHeader("Authorization", `Bearer ${token}`);
 }

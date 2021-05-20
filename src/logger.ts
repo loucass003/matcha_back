@@ -1,14 +1,14 @@
-import { NextFunction } from '@decorators/socket';
-import { Response } from 'express';
-import { createLogger, format, transports } from 'winston';
-import { AppRequest } from './types';
+import { NextFunction } from "@decorators/socket";
+import { Response } from "express";
+import { createLogger, format, transports } from "winston";
+import { AppRequest } from "./types";
 
 // Import Functions
 const { File, Console } = transports;
 
 // Init Logger
 const logger = createLogger({
-  level: 'info',
+  level: "info",
 });
 
 /**
@@ -18,12 +18,12 @@ const logger = createLogger({
  */
 const fileFormat = format.combine(format.timestamp(), format.json());
 const errTransport = new File({
-  filename: './logs/error.log',
+  filename: "./logs/error.log",
   format: fileFormat,
-  level: 'error',
+  level: "error",
 });
 const infoTransport = new File({
-  filename: './logs/combined.log',
+  filename: "./logs/combined.log",
   format: fileFormat,
 });
 logger.add(errTransport);
@@ -41,7 +41,7 @@ const consoleTransport = new Console({
   format: format.combine(
     format.colorize(),
     format.simple(),
-    errorStackFormat(),
+    errorStackFormat()
   ),
 });
 logger.add(consoleTransport);
@@ -58,10 +58,10 @@ export function loggerMiddleware(): any {
     const { method, url } = req;
     const { statusCode } = res;
     const start = process.hrtime();
-    res.on('finish', () => {
+    res.on("finish", () => {
       const durationInMilliseconds = getRequestDuration(start);
       logger.info(
-        `${method} ${url} ${statusCode} ${durationInMilliseconds.toLocaleString()} ms`,
+        `${method} ${url} ${statusCode} ${durationInMilliseconds.toLocaleString()} ms`
       );
     });
     next();

@@ -1,7 +1,7 @@
-import { Status } from '../utils/http-status';
-import { ValidationError } from '../validation/ValidationError';
-import { ResponseError } from './ResponseError';
-import { ResponseErrorType } from './ResponseErrorType';
+import { Status } from "../utils/http-status";
+import { ValidationError } from "../validation/ValidationError";
+import { ResponseError } from "./ResponseError";
+import { ResponseErrorType } from "./ResponseErrorType";
 
 export class ValidationMiddlewareError extends ResponseError {
   errors: ValidationError[];
@@ -9,8 +9,8 @@ export class ValidationMiddlewareError extends ResponseError {
   constructor(errors: ValidationError[]) {
     super(
       ResponseErrorType.ValidationError,
-      'Query validation error',
-      Status.BadRequest,
+      "Query validation error",
+      Status.BadRequest
     );
     this.errors = errors;
   }

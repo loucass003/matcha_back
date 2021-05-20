@@ -1,6 +1,6 @@
-import { Response } from 'express';
-import { Status } from '../utils/http-status';
-import { ResponseErrorType } from './ResponseErrorType';
+import { Response } from "express";
+import { Status } from "../utils/http-status";
+import { ResponseErrorType } from "./ResponseErrorType";
 
 export class ResponseError {
   type: string;
@@ -12,7 +12,7 @@ export class ResponseError {
   constructor(
     type: ResponseErrorType,
     message: string,
-    status = Status.InternalServerError,
+    status = Status.InternalServerError
   ) {
     this.type = ResponseErrorType[type];
     this.message = message;
