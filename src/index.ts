@@ -2,9 +2,11 @@ import { attachControllers } from '@decorators/express';
 import express, { Application } from 'express';
 import { Client } from 'pg';
 import controllers from './controllers';
-import logger from './logger';
+import { logger, loggerMiddleware } from './logger';
 import { jwtSessionMiddleware } from './auth/middleware';
 import { databaseMiddleware } from './database/middleware';
+
+export { logger };
 
 export const {
   PORT,
@@ -33,6 +35,7 @@ export class Main {
     this.app.use(express.json());
     this.app.use(databaseMiddleware(this.db_client));
     this.app.use(jwtSessionMiddleware());
+    this.app.use(loggerMiddleware());
     attachControllers(this.app, controllers);
     this.app.listen(PORT, () => {
       logger.info(`Connected on port ${PORT}`);

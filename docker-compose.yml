@@ -17,12 +17,14 @@ services:
     restart: always
     ports:
       - 4000:4000
+      - 9229:9229
     environment: 
       - PORT=4000
       - JWT_SECRET=secret
       - POSTGRES_DSN=postgres://matcha:123456@db:5432/matcha
     volumes: 
       - ./src:/home/node/app/src
+      - ./logs:/home/node/app/logs
 
 volumes:
   postgres_database:

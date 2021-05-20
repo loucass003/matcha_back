@@ -1,4 +1,7 @@
+import { NextFunction } from '@decorators/socket';
+import { Response } from 'express';
 import { createLogger, format, transports } from 'winston';
+import { AppRequest } from './types';
 
 // Import Functions
 const { File, Console } = transports;
@@ -43,4 +46,26 @@ const consoleTransport = new Console({
 });
 logger.add(consoleTransport);
 
-export default logger;
+export function loggerMiddleware(): any {
+  const getRequestDuration = (start: [number, number]) => {
+    const NS_PER_SEC = 1e9; //  convert to nanoseconds
+    const NS_TO_MS = 1e6; // convert to milliseconds
+    const diff = process.hrtime(start);
+    return (diff[0] * NS_PER_SEC + diff[1]) / NS_TO_MS;
+  };
+
+  return (req: AppRequest, res: Response, next: NextFunction) => {
+    const { method, url } = req;
+    const { statusCode } = res;
+    const start = process.hrtime();
+    res.on('finish', () => {
+      const durationInMilliseconds = getRequestDuration(start);
+      logger.info(
+        `${method} ${url} ${statusCode} ${durationInMilliseconds.toLocaleString()} ms`,
+      );
+    });
+    next();
+  };
+}
+
+export { logger };

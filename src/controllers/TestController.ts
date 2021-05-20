@@ -1,5 +1,4 @@
 import {
-  Body,
   Controller,
   Params,
   Post,
@@ -8,35 +7,37 @@ import {
 } from '@decorators/express';
 import express from 'express';
 import { createToken, setAuthHeaders } from '../auth';
+import { User } from '../entity/User';
 import { ValidationMiddleware } from '../middlewares/ValidationMiddleware';
+import { Serialize } from '../serializer';
 import { AppRequest } from '../types';
-import {
-  array, num, required, str,
-} from '../validation';
+import { Status } from '../utils/http-status';
+// import {
+//   array, num, required, str,
+// } from '../validation';
 
 @Controller('/')
 export class TestController {
   @Post('/hello/:id', [
     ValidationMiddleware({
-      params: {
-        id: required().and(str.is()).and(num.parse()).and(num.min(5)),
-      },
-      body: {
-        data: required().and(array.is()).and(array.items(num.is())),
-        toto: required().and(str.is()).and(str.min(3)),
-      },
+      // params: {
+      //   username: required().and(str.is()).and(str.length(5, 30)),
+      // },
+      // body: {
+      //   data: required().and(array.is()).and(array.items(num.is())),
+      //   toto: required().and(str.is()).and(str.min(3)),
+      // },
     }),
   ])
-  hello(
-    @Request() { session, db }: AppRequest,
+  async hello(
+    @Request() { db }: AppRequest,
     @Response() res: express.Response,
-    @Body('data') data: number[],
-    @Params('id') id: number,
+      // @Body('data') data: number[],
+      // @Params('id') id: number,
   ) {
-    res.send(
-      `hello ${data} ${id} Session ${session ? session.username : 'no'}`,
-    );
-    console.log(db);
+    const users = await User.all(db);
+    console.log(users);
+    res.json(Serialize(users, ['public', 'private']));
   }
 
   @Post('/login/:username')
@@ -45,6 +46,6 @@ export class TestController {
     @Params('username') username: string,
   ) {
     setAuthHeaders(res, createToken({ username }));
-    res.sendStatus(200);
+    res.sendStatus(Status.OK);
   }
 }
