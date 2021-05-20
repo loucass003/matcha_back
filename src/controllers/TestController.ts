@@ -37,7 +37,7 @@ export class TestController {
   ) {
     const users = await User.all(db);
     console.log(users);
-    res.json(Serialize(users, ['public', 'private']));
+    res.json(Serialize(users, ['public']));
   }
 
   @Post('/login/:username')

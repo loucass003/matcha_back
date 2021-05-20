@@ -1,0 +1,3 @@
+[submodule "src/validation"]
+	path = src/validation
+	url = git@gitlab.com:loucass003/type-validation.git

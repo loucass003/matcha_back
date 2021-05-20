@@ -7,15 +7,24 @@ export function Serialize(instance: any, groups: string[] = []): any {
       .filter(
         ({ options }) => options
           && (groups.length === 0
-            || options.groups.some((g) => groups.includes(g))),
+            || (options.groups && options.groups.some((g) => groups.includes(g)))),
       );
 
-    return fieldsToReturn.reduce((obj, { field }) => {
-      if (inst[field] && typeof inst[field] === 'object') {
-        return { ...obj, [field]: serialize_object(inst[field]) };
-      }
-      return { ...obj, [field]: inst[field] };
-    }, {});
+    return fieldsToReturn.reduce(
+      (obj, { field, options: { format = (value) => value } }) => {
+        const transformed_value = format(inst[field]);
+
+        return ({
+          ...obj,
+          [field]:
+          transformed_value
+          && (typeof transformed_value === 'object' || Array.isArray(transformed_value))
+            ? Serialize(transformed_value, groups)
+            : format(transformed_value),
+        });
+      },
+      {},
+    );
   };
 
   if (Array.isArray(instance)) {

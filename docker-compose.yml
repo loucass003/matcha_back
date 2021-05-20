@@ -1,4 +1,4 @@
-version: '3.1'
+version: "3.1"
 
 services:
   db:
@@ -10,7 +10,7 @@ services:
       POSTGRES_DB: matcha
     ports:
       - 5432:5432
-    volumes: 
+    volumes:
       - postgres_database:/var/lib/postgresql
   app:
     build: .
@@ -18,14 +18,14 @@ services:
     ports:
       - 4000:4000
       - 9229:9229
-    environment: 
+    environment:
       - PORT=4000
       - JWT_SECRET=secret
       - POSTGRES_DSN=postgres://matcha:123456@db:5432/matcha
-    volumes: 
+    volumes:
       - ./src:/home/node/app/src
       - ./logs:/home/node/app/logs
 
 volumes:
   postgres_database:
-      external: true
+    external: true
