@@ -12,6 +12,7 @@ services:
       - 5432:5432
     volumes:
       - postgres_database:/var/lib/postgresql
+      - ./docker/sql/:/docker-entrypoint-initdb.d/:ro
   app:
     build: .
     restart: always

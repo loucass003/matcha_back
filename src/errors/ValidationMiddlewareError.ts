@@ -1,4 +1,4 @@
-import { Status } from "../utils/http-status";
+import { Status } from "../types/http-status";
 import { ValidationError } from "../validation/ValidationError";
 import { ResponseError } from "./ResponseError";
 import { ResponseErrorType } from "./ResponseErrorType";
