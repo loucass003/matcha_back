@@ -1,7 +1,7 @@
 import { Status } from "../types/http-status";
 import { ValidationError } from "../validation/ValidationError";
 import { ResponseError } from "./ResponseError";
-import { ResponseErrorType } from "./ResponseErrorType";
+import { ResponseErrorType } from "../types/errors/ResponseErrorType";
 
 export class ValidationMiddlewareError extends ResponseError {
   errors: ValidationError[];

@@ -17,7 +17,9 @@ async function init() {
   });
   await db.connect();
 
+  console.log("generating users");
   await generateUsers(faker, db, 500);
+  console.log("done");
   exit(0);
 }
 

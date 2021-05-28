@@ -1,7 +1,7 @@
 import { Response } from "express";
 import { IResponseError } from "../types/errors/ResponseError";
 import { Status } from "../types/http-status";
-import { ResponseErrorType } from "./ResponseErrorType";
+import { ResponseErrorType } from "../types/errors/ResponseErrorType";
 
 export class ResponseError implements IResponseError {
   type: string;
