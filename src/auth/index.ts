@@ -2,7 +2,7 @@ import { Response } from "express";
 import jwt from "jsonwebtoken";
 import { JWT_SECRET } from "../index";
 
-export function createToken(data: any, secret: string = JWT_SECRET) {
+export function createToken<T>(data: T, secret: string = JWT_SECRET) {
   return jwt.sign({ data }, secret, { expiresIn: "15m" });
 }
 

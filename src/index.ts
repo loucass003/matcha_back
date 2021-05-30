@@ -1,6 +1,7 @@
 import { attachControllers } from "@decorators/express";
 import express, { Application } from "express";
 import { Client } from "pg";
+import cors from "cors";
 import controllers from "./controllers";
 import { logger, loggerMiddleware } from "./logger";
 import { jwtSessionMiddleware } from "./auth/middleware";
@@ -32,6 +33,11 @@ export class Main {
 
     this.app = express();
 
+    this.app.use(
+      cors({
+        origin: "http://localhost:3000",
+      })
+    );
     this.app.use(express.json());
     this.app.use(databaseMiddleware(this.db_client));
     this.app.use(jwtSessionMiddleware());

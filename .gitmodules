@@ -1,3 +1,6 @@
 [submodule "src/validation"]
 	path = src/validation
 	url = git@gitlab.com:loucass003/type-validation.git
+[submodule "src/types"]
+	path = src/types
+	url = git@gitlab.com:loucass003/matcha_types.git

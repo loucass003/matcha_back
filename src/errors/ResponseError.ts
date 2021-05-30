@@ -1,8 +1,9 @@
 import { Response } from "express";
-import { Status } from "../utils/http-status";
-import { ResponseErrorType } from "./ResponseErrorType";
+import { IResponseError } from "../types/errors/ResponseError";
+import { Status } from "../types/http-status";
+import { ResponseErrorType } from "../types/errors/ResponseErrorType";
 
-export class ResponseError {
+export class ResponseError implements IResponseError {
   type: string;
 
   status: number;
@@ -20,6 +21,6 @@ export class ResponseError {
   }
 
   send(res: Response) {
-    res.json(this).status(this.status);
+    res.status(this.status).json(this);
   }
 }
