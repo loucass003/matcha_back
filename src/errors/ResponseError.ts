@@ -21,6 +21,6 @@ export class ResponseError implements IResponseError {
   }
 
   send(res: Response) {
-    res.json(this).status(this.status);
+    res.status(this.status).json(this);
   }
 }

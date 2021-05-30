@@ -12,7 +12,7 @@ export async function generateUsers(
   for (let i = 0; i < amount; i += 1) {
     const firstname = faker.name.firstName();
     const lastname = faker.name.lastName();
-    const password = await hashPassword(firstname);
+    const password = await hashPassword(`0${firstname}Password`);
 
     const user = await new User({
       firstname,

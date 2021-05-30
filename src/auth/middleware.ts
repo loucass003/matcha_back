@@ -6,6 +6,7 @@ import { Session } from "./Session";
 export function jwtSessionMiddleware(): any {
   return (req: AppRequest, res: Response, next: NextFunction) => {
     const { headers } = req;
+    req.session = undefined;
     if (headers.authorization) {
       const token = headers.authorization.substring("Bearer ".length);
       const tokenData = verifyToken(token);
