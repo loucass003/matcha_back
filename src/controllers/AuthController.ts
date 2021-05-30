@@ -77,7 +77,7 @@ export class AuthController {
     }
     if (!(await verifyPassword(user.password, password))) {
       new ResponseError(
-        ResponseErrorType.UserNotFound,
+        ResponseErrorType.UserInvalidPassword,
         `invalid password for user with email ${email}`,
         Status.BadRequest
       ).send(res);
