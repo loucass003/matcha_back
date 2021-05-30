@@ -1,8 +1,8 @@
 import { Request } from "express";
 import { Client } from "pg";
-import { Session } from "./auth/Session";
+import { IUserSession } from "./types/user";
 
 export type AppRequest = Request & {
-  session?: Session;
+  session?: IUserSession;
   db: Client;
 };
