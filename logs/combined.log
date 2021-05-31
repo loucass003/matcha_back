@@ -319,3 +319,502 @@
 {"message":"Connected on port 4000","level":"info","timestamp":"2021-05-30T17:49:45.555Z"}
 {"message":"Connected to database","level":"info","timestamp":"2021-05-30T18:04:26.358Z"}
 {"message":"Connected on port 4000","level":"info","timestamp":"2021-05-30T18:04:26.361Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-30T22:05:42.119Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-30T22:05:42.123Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-30T22:07:51.514Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-30T22:07:51.518Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-30T22:09:49.879Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-30T22:09:49.883Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-30T22:11:45.334Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-30T22:11:45.338Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-30T22:12:01.625Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-30T22:12:01.629Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-30T22:13:56.544Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-30T22:13:56.548Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-30T22:14:07.345Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-30T22:14:07.349Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-30T22:14:31.757Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-30T22:14:31.761Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-30T22:14:36.966Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-30T22:14:36.970Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-30T22:19:42.971Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-30T22:19:42.975Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-30T22:20:00.577Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-30T22:20:00.581Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-30T22:20:44.994Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-30T22:20:44.998Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-30T22:20:53.513Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-30T22:20:53.517Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-30T22:21:08.685Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-30T22:21:08.689Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-30T22:23:44.897Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-30T22:23:44.901Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-30T22:24:08.916Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-30T22:24:08.920Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-30T22:24:12.502Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-30T22:24:12.506Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-30T22:27:21.069Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-30T22:27:21.073Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-30T22:28:14.729Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-30T22:28:14.733Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-30T22:29:59.211Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-30T22:29:59.215Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-30T22:30:53.779Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-30T22:30:53.783Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-30T22:31:00.247Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-30T22:31:00.251Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-30T22:32:39.531Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-30T22:32:39.535Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-30T22:33:00.603Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-30T22:33:00.607Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-30T22:37:03.254Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-30T22:37:03.258Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-30T22:37:25.259Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-30T22:37:25.263Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-30T22:37:34.228Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-30T22:37:34.232Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-30T22:38:22.502Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-30T22:38:22.506Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-30T22:40:02.279Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-30T22:40:02.283Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-30T22:42:43.326Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-30T22:42:43.329Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-30T22:45:09.684Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-30T22:45:09.688Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-30T22:45:58.898Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-30T22:45:58.902Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-30T22:46:03.207Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-30T22:46:03.210Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-30T22:50:06.261Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-30T22:50:06.265Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-30T22:50:17.192Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-30T22:50:17.196Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-30T22:51:26.463Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-30T22:51:26.467Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-30T22:52:46.921Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-30T22:52:46.925Z"}
+{"message":"POST /auth/register 200 23.52 ms","level":"info","timestamp":"2021-05-30T22:53:55.698Z"}
+{"message":"POST /auth/register 200 7.868 ms","level":"info","timestamp":"2021-05-30T22:56:45.460Z"}
+{"message":"POST /auth/activate 200 6.246 ms","level":"info","timestamp":"2021-05-30T22:58:10.223Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-30T22:59:43.778Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-30T22:59:43.782Z"}
+{"message":"POST /auth/activate 200 9.486 ms","level":"info","timestamp":"2021-05-30T22:59:45.127Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-30T23:00:03.301Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-30T23:00:03.305Z"}
+{"message":"POST /auth/activate 200 12.681 ms","level":"info","timestamp":"2021-05-30T23:00:04.728Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-30T23:00:18.563Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-30T23:00:18.567Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-30T23:00:21.290Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-30T23:00:21.294Z"}
+{"message":"POST /auth/activate 200 8.147 ms","level":"info","timestamp":"2021-05-30T23:00:25.043Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-30T23:00:44.957Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-30T23:00:44.961Z"}
+{"message":"POST /auth/activate 200 8.141 ms","level":"info","timestamp":"2021-05-30T23:00:55.875Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-30T23:01:15.112Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-30T23:01:15.116Z"}
+{"message":"POST /auth/activate 200 8.113 ms","level":"info","timestamp":"2021-05-30T23:01:18.479Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-30T23:01:35.626Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-30T23:01:35.629Z"}
+{"message":"POST /auth/activate 200 8.058 ms","level":"info","timestamp":"2021-05-30T23:01:37.046Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-30T23:02:37.782Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-30T23:02:37.786Z"}
+{"message":"POST /auth/activate 200 8.129 ms","level":"info","timestamp":"2021-05-30T23:02:51.130Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-30T23:03:14.429Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-30T23:03:14.433Z"}
+{"message":"POST /auth/activate 200 6.683 ms","level":"info","timestamp":"2021-05-30T23:03:14.921Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-30T23:04:48.805Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-30T23:04:48.809Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-30T23:05:03.240Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-30T23:05:03.244Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-30T23:05:19.369Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-30T23:05:19.373Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-30T23:05:45.723Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-30T23:05:45.727Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-30T23:05:54.018Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-30T23:05:54.022Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-30T23:06:01.067Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-30T23:06:01.071Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-30T23:13:52.865Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-30T23:13:52.869Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T05:27:35.040Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T05:27:35.043Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T17:19:32.679Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T17:19:32.683Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T17:19:44.749Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T17:19:44.753Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T17:20:29.324Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T17:20:29.328Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T17:24:28.343Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T17:24:28.347Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T17:24:41.461Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T17:24:41.464Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T17:25:10.991Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T17:25:10.995Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T17:25:59.004Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T17:25:59.008Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T17:27:44.259Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T17:27:44.263Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T17:27:55.191Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T17:27:55.195Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T17:30:03.899Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T17:30:03.903Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T17:30:39.687Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T17:30:39.691Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T17:33:59.795Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T17:33:59.798Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T17:35:04.885Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T17:35:04.889Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T17:35:25.891Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T17:35:25.895Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T17:36:46.842Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T17:36:46.846Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T17:38:22.117Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T17:38:22.121Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T17:38:32.257Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T17:38:32.260Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T17:38:46.760Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T17:38:46.763Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T17:38:54.602Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T17:38:54.606Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T17:40:05.806Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T17:40:05.810Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T17:40:19.676Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T17:40:19.681Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T17:43:03.462Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T17:43:03.466Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T17:43:17.223Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T17:43:17.227Z"}
+{"message":"POST /auth/reset_password 200 4.72 ms","level":"info","timestamp":"2021-05-31T17:44:54.171Z"}
+{"message":"POST /auth/password_reset 200 3.08 ms","level":"info","timestamp":"2021-05-31T17:45:05.158Z"}
+{"message":"POST /auth/password_reset 200 1.079 ms","level":"info","timestamp":"2021-05-31T17:45:43.049Z"}
+{"message":"POST /auth/password_reset 200 0.452 ms","level":"info","timestamp":"2021-05-31T17:45:46.715Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T17:46:48.732Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T17:46:48.736Z"}
+{"message":"POST /auth/password_reset 200 3.051 ms","level":"info","timestamp":"2021-05-31T17:46:52.336Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T17:47:22.722Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T17:47:22.726Z"}
+{"message":"POST /auth/password_reset 200 3.205 ms","level":"info","timestamp":"2021-05-31T17:47:23.419Z"}
+{"message":"POST /auth/password_reset 200 0.709 ms","level":"info","timestamp":"2021-05-31T17:47:24.039Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T17:49:14.057Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T17:49:14.061Z"}
+{"message":"POST /auth/password_reset 200 2.963 ms","level":"info","timestamp":"2021-05-31T17:49:15.078Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T17:49:24.961Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T17:49:24.965Z"}
+{"message":"POST /auth/password_reset 200 3.248 ms","level":"info","timestamp":"2021-05-31T17:49:25.546Z"}
+{"message":"POST /auth/password_reset 200 1.025 ms","level":"info","timestamp":"2021-05-31T17:49:26.129Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T17:49:46.219Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T17:49:46.222Z"}
+{"message":"POST /auth/password_reset 200 3.078 ms","level":"info","timestamp":"2021-05-31T17:49:53.458Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T17:50:27.040Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T17:50:27.044Z"}
+{"message":"POST /auth/password_reset 200 2.92 ms","level":"info","timestamp":"2021-05-31T17:50:28.791Z"}
+{"message":"POST /auth/password_reset 200 0.757 ms","level":"info","timestamp":"2021-05-31T17:50:29.562Z"}
+{"message":"POST /auth/password_reset 200 0.398 ms","level":"info","timestamp":"2021-05-31T17:50:30.014Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T17:50:49.713Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T17:50:49.717Z"}
+{"message":"POST /auth/password_reset 200 2.993 ms","level":"info","timestamp":"2021-05-31T17:50:50.389Z"}
+{"message":"POST /auth/password_reset 200 0.707 ms","level":"info","timestamp":"2021-05-31T17:50:50.893Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T17:52:43.757Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T17:52:43.761Z"}
+{"message":"POST /auth/password_reset 200 3.02 ms","level":"info","timestamp":"2021-05-31T17:52:44.313Z"}
+{"message":"POST /auth/password_reset 200 1.473 ms","level":"info","timestamp":"2021-05-31T17:52:58.186Z"}
+{"message":"POST /auth/password_reset 200 0.454 ms","level":"info","timestamp":"2021-05-31T17:53:09.839Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T17:53:24.944Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T17:53:24.948Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T17:53:29.329Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T17:53:29.333Z"}
+{"message":"POST /auth/password_reset 200 2.666 ms","level":"info","timestamp":"2021-05-31T17:53:29.402Z"}
+{"message":"POST /auth/password_reset 200 1.577 ms","level":"info","timestamp":"2021-05-31T17:53:46.678Z"}
+{"message":"POST /auth/password_reset 200 0.905 ms","level":"info","timestamp":"2021-05-31T17:53:54.704Z"}
+{"message":"POST /auth/password_reset 200 0.551 ms","level":"info","timestamp":"2021-05-31T17:54:03.140Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T17:55:29.242Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T17:55:29.245Z"}
+{"message":"POST /auth/password_reset 200 1.772 ms","level":"info","timestamp":"2021-05-31T17:55:38.486Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T17:56:03.381Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T17:56:03.385Z"}
+{"message":"POST /auth/password_reset 200 2.79 ms","level":"info","timestamp":"2021-05-31T17:56:03.529Z"}
+{"message":"POST /auth/password_reset 200 0.635 ms","level":"info","timestamp":"2021-05-31T17:56:05.387Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T17:56:24.486Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T17:56:24.490Z"}
+{"message":"POST /auth/password_reset 200 2.76 ms","level":"info","timestamp":"2021-05-31T17:56:24.798Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T17:56:38.754Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T17:56:38.758Z"}
+{"message":"POST /auth/password_reset 200 2.732 ms","level":"info","timestamp":"2021-05-31T17:56:38.848Z"}
+{"message":"POST /auth/password_reset 200 0.699 ms","level":"info","timestamp":"2021-05-31T17:57:02.171Z"}
+{"message":"POST /auth/password_reset 200 2.406 ms","level":"info","timestamp":"2021-05-31T17:57:12.151Z"}
+{"message":"POST /auth/password_reset 200 0.603 ms","level":"info","timestamp":"2021-05-31T17:57:18.537Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T17:58:51.250Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T17:58:51.254Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T17:59:03.833Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T17:59:03.837Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T17:59:56.077Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T17:59:56.081Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T18:00:09.603Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T18:00:09.607Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T18:00:41.011Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T18:00:41.015Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T18:00:45.739Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T18:00:45.743Z"}
+{"message":"POST /auth/password_reset 200 3.03 ms","level":"info","timestamp":"2021-05-31T18:00:54.313Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T18:01:49.591Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T18:01:49.595Z"}
+{"message":"POST /auth/password_reset 200 3.041 ms","level":"info","timestamp":"2021-05-31T18:01:49.741Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T18:03:13.191Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T18:03:13.195Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T18:03:38.532Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T18:03:38.536Z"}
+{"message":"POST /auth/password_reset 200 3.017 ms","level":"info","timestamp":"2021-05-31T18:03:39.079Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T18:03:50.620Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T18:03:50.624Z"}
+{"message":"POST /auth/password_reset 200 2.998 ms","level":"info","timestamp":"2021-05-31T18:03:51.813Z"}
+{"message":"POST /auth/password_reset 200 0.735 ms","level":"info","timestamp":"2021-05-31T18:03:52.736Z"}
+{"message":"POST /auth/password_reset 200 50,665.967 ms","level":"info","timestamp":"2021-05-31T18:06:01.674Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T18:06:22.526Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T18:06:22.530Z"}
+{"message":"POST /auth/password_reset 200 2.982 ms","level":"info","timestamp":"2021-05-31T18:06:25.892Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T18:07:48.108Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T18:07:48.111Z"}
+{"message":"POST /auth/password_reset 200 24,744.641 ms","level":"info","timestamp":"2021-05-31T18:09:43.669Z"}
+{"message":"POST /auth/password_reset 200 46,242.45 ms","level":"info","timestamp":"2021-05-31T18:10:36.711Z"}
+{"message":"POST /auth/password_reset 200 18,510.507 ms","level":"info","timestamp":"2021-05-31T18:11:05.710Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T18:11:42.170Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T18:11:42.174Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T18:11:51.195Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T18:11:51.199Z"}
+{"message":"POST /auth/password_reset 200 3.123 ms","level":"info","timestamp":"2021-05-31T18:11:52.499Z"}
+{"message":"POST /auth/password_reset 200 0.758 ms","level":"info","timestamp":"2021-05-31T18:12:09.158Z"}
+{"message":"POST /auth/password_reset 200 53,994.308 ms","level":"info","timestamp":"2021-05-31T18:13:11.061Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T18:16:45.094Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T18:16:45.098Z"}
+{"message":"POST /auth/password_reset 200 10.245 ms","level":"info","timestamp":"2021-05-31T18:16:46.218Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T18:18:10.212Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T18:18:10.216Z"}
+{"message":"POST /auth/password_reset 200 3.105 ms","level":"info","timestamp":"2021-05-31T18:18:12.243Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T18:18:58.717Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T18:18:58.721Z"}
+{"message":"POST /auth/password_reset 200 3.133 ms","level":"info","timestamp":"2021-05-31T18:18:59.940Z"}
+{"message":"POST /auth/password_reset 200 0.8 ms","level":"info","timestamp":"2021-05-31T18:19:27.503Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T18:20:46.692Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T18:20:46.696Z"}
+{"message":"POST /auth/password_reset 200 3.208 ms","level":"info","timestamp":"2021-05-31T18:20:47.092Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T18:21:14.478Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T18:21:14.482Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T18:22:47.015Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T18:22:47.019Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T18:23:08.913Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T18:23:08.917Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T18:23:20.772Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T18:23:20.775Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T19:33:25.297Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T19:33:25.301Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T19:33:30.592Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T19:33:30.596Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T19:36:17.043Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T19:36:17.046Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T19:44:27.728Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T19:44:27.732Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T19:44:41.395Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T19:44:41.399Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T19:48:24.205Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T19:48:24.209Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T19:48:28.415Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T19:48:28.419Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T19:48:33.400Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T19:48:33.404Z"}
+{"message":"POST /auth/password_reset 200 3.214 ms","level":"info","timestamp":"2021-05-31T19:49:47.793Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T19:51:29.708Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T19:51:29.712Z"}
+{"message":"POST /auth/password_reset 200 3.383 ms","level":"info","timestamp":"2021-05-31T19:51:30.749Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T19:51:43.304Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T19:51:43.308Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T19:51:50.703Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T19:51:50.707Z"}
+{"message":"POST /auth/password_reset 200 3.297 ms","level":"info","timestamp":"2021-05-31T19:51:50.750Z"}
+{"message":"POST /auth/password_reset 200 0.811 ms","level":"info","timestamp":"2021-05-31T19:51:51.842Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T19:51:58.583Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T19:51:58.587Z"}
+{"message":"POST /auth/password_reset 200 3.099 ms","level":"info","timestamp":"2021-05-31T19:51:58.707Z"}
+{"message":"POST /auth/password_reset 200 0.705 ms","level":"info","timestamp":"2021-05-31T19:51:59.055Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T19:52:26.026Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T19:52:26.030Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T19:52:41.166Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T19:52:41.170Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T19:52:50.884Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T19:52:50.888Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T19:53:06.264Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T19:53:06.268Z"}
+{"message":"POST /auth/password_reset 200 3.387 ms","level":"info","timestamp":"2021-05-31T19:53:06.770Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T19:53:11.887Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T19:53:11.891Z"}
+{"message":"POST /auth/password_reset 200 3.157 ms","level":"info","timestamp":"2021-05-31T19:53:12.348Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T19:53:16.766Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T19:53:16.769Z"}
+{"message":"POST /auth/password_reset 200 3.204 ms","level":"info","timestamp":"2021-05-31T19:53:16.856Z"}
+{"message":"POST /auth/password_reset 200 0.722 ms","level":"info","timestamp":"2021-05-31T19:53:17.193Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T19:53:41.441Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T19:53:41.445Z"}
+{"message":"POST /auth/password_reset 200 3.087 ms","level":"info","timestamp":"2021-05-31T19:53:42.792Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T19:54:36.835Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T19:54:36.839Z"}
+{"message":"POST /auth/password_reset 200 3.346 ms","level":"info","timestamp":"2021-05-31T19:54:37.610Z"}
+{"message":"POST /auth/password_reset 200 0.684 ms","level":"info","timestamp":"2021-05-31T19:54:38.066Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T19:55:23.801Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T19:55:23.805Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T19:55:26.865Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T19:55:26.869Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T19:55:31.236Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T19:55:31.240Z"}
+{"message":"POST /auth/password_reset 200 3.188 ms","level":"info","timestamp":"2021-05-31T19:55:35.603Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T19:56:35.211Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T19:56:35.215Z"}
+{"message":"POST /auth/password_reset 200 3.291 ms","level":"info","timestamp":"2021-05-31T19:56:37.436Z"}
+{"message":"POST /auth/password_reset 200 0.701 ms","level":"info","timestamp":"2021-05-31T19:56:37.984Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T19:56:59.951Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T19:56:59.955Z"}
+{"message":"POST /auth/password_reset 200 3.099 ms","level":"info","timestamp":"2021-05-31T19:57:00.288Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T19:57:13.810Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T19:57:13.813Z"}
+{"message":"POST /auth/password_reset 200 3.373 ms","level":"info","timestamp":"2021-05-31T19:57:14.188Z"}
+{"message":"POST /auth/password_reset 200 0.791 ms","level":"info","timestamp":"2021-05-31T22:49:53.205Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T22:50:04.771Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T22:50:04.775Z"}
+{"message":"POST /auth/password_reset 200 3.212 ms","level":"info","timestamp":"2021-05-31T22:50:05.779Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T22:50:10.583Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T22:50:10.587Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T22:50:50.043Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T22:50:50.049Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T22:51:21.244Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T22:51:21.248Z"}
+{"message":"POST /auth/password_reset 200 3.176 ms","level":"info","timestamp":"2021-05-31T22:51:25.685Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T22:52:32.697Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T22:52:32.700Z"}
+{"message":"POST /auth/password_reset 200 3.273 ms","level":"info","timestamp":"2021-05-31T22:52:34.824Z"}
+{"message":"POST /auth/password_reset 200 0.712 ms","level":"info","timestamp":"2021-05-31T22:52:41.009Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T22:52:48.661Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T22:52:48.665Z"}
+{"message":"POST /auth/password_reset 200 3.274 ms","level":"info","timestamp":"2021-05-31T22:52:48.713Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T22:52:53.498Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T22:52:53.502Z"}
+{"message":"POST /auth/password_reset 200 3.682 ms","level":"info","timestamp":"2021-05-31T22:53:29.770Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T22:53:47.122Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T22:53:47.126Z"}
+{"message":"POST /auth/password_reset 200 3.238 ms","level":"info","timestamp":"2021-05-31T22:53:47.403Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T22:55:37.901Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T22:55:37.905Z"}
+{"message":"POST /auth/password_reset 200 3.144 ms","level":"info","timestamp":"2021-05-31T22:55:40.053Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T22:56:21.241Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T22:56:21.245Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T22:56:24.547Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T22:56:24.551Z"}
+{"message":"POST /auth/password_reset 200 3.202 ms","level":"info","timestamp":"2021-05-31T22:56:25.210Z"}
+{"message":"POST /auth/password_reset 200 0.742 ms","level":"info","timestamp":"2021-05-31T22:56:42.824Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T22:57:18.361Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T22:57:18.365Z"}
+{"message":"POST /auth/password_reset 200 3.11 ms","level":"info","timestamp":"2021-05-31T22:57:19.312Z"}
+{"message":"POST /auth/password_reset 200 0.88 ms","level":"info","timestamp":"2021-05-31T22:57:20.203Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T22:57:41.799Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T22:57:41.803Z"}
+{"message":"POST /auth/password_reset 200 3.25 ms","level":"info","timestamp":"2021-05-31T22:57:42.066Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T22:57:46.206Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T22:57:46.210Z"}
+{"message":"POST /auth/password_reset 200 3.14 ms","level":"info","timestamp":"2021-05-31T22:57:46.517Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T22:58:25.160Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T22:58:25.164Z"}
+{"message":"POST /auth/password_reset 200 3.373 ms","level":"info","timestamp":"2021-05-31T22:58:25.625Z"}
+{"message":"POST /auth/password_reset 200 0.679 ms","level":"info","timestamp":"2021-05-31T22:58:26.338Z"}
+{"message":"POST /auth/password_reset 200 0.472 ms","level":"info","timestamp":"2021-05-31T22:58:26.846Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T22:58:46.373Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T22:58:46.377Z"}
+{"message":"POST /auth/password_reset 200 3.063 ms","level":"info","timestamp":"2021-05-31T22:58:46.885Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T22:59:09.788Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T22:59:09.792Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T22:59:39.802Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T22:59:39.806Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T22:59:50.047Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T22:59:50.051Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T23:01:31.046Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T23:01:31.050Z"}
+{"message":"POST /auth/password_reset 200 3.108 ms","level":"info","timestamp":"2021-05-31T23:01:31.320Z"}
+{"message":"POST /auth/password_reset 200 0.679 ms","level":"info","timestamp":"2021-05-31T23:01:31.664Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T23:02:02.596Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T23:02:02.600Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T23:02:29.483Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T23:02:29.487Z"}
+{"message":"POST /auth/password_reset 200 3.098 ms","level":"info","timestamp":"2021-05-31T23:02:30.787Z"}
+{"message":"POST /auth/password_reset 200 0.767 ms","level":"info","timestamp":"2021-05-31T23:02:49.578Z"}
+{"message":"POST /auth/password_reset 200 0.616 ms","level":"info","timestamp":"2021-05-31T23:02:55.931Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T23:03:23.670Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T23:03:23.674Z"}
+{"message":"POST /auth/password_reset 200 3.264 ms","level":"info","timestamp":"2021-05-31T23:03:24.135Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T23:03:30.432Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T23:03:30.436Z"}
+{"message":"POST /auth/password_reset 200 3.169 ms","level":"info","timestamp":"2021-05-31T23:03:30.546Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T23:03:58.644Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T23:03:58.648Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T23:04:11.131Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T23:04:11.135Z"}
+{"message":"POST /auth/password_reset 200 3.075 ms","level":"info","timestamp":"2021-05-31T23:04:11.666Z"}
+{"message":"POST /auth/password_reset 200 0.692 ms","level":"info","timestamp":"2021-05-31T23:04:12.281Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T23:04:30.639Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T23:04:30.643Z"}
+{"message":"POST /auth/password_reset 200 3.397 ms","level":"info","timestamp":"2021-05-31T23:04:30.874Z"}
+{"message":"POST /auth/password_reset 200 0.693 ms","level":"info","timestamp":"2021-05-31T23:04:31.349Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T23:06:13.104Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T23:06:13.108Z"}
+{"message":"POST /auth/password_reset 200 3.109 ms","level":"info","timestamp":"2021-05-31T23:06:13.974Z"}
+{"message":"POST /auth/password_reset 200 0.728 ms","level":"info","timestamp":"2021-05-31T23:06:14.604Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T23:06:29.439Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T23:06:29.443Z"}
+{"message":"POST /auth/password_reset 200 3.102 ms","level":"info","timestamp":"2021-05-31T23:06:29.841Z"}
+{"message":"POST /auth/password_reset 200 0.808 ms","level":"info","timestamp":"2021-05-31T23:06:30.224Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T23:06:34.466Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T23:06:34.469Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T23:07:32.883Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T23:07:32.887Z"}
+{"message":"POST /auth/password_reset 200 10.164 ms","level":"info","timestamp":"2021-05-31T23:07:33.434Z"}
+{"message":"POST /auth/password_reset 200 1.129 ms","level":"info","timestamp":"2021-05-31T23:07:34.389Z"}
+{"message":"POST /auth/password_reset 200 0.889 ms","level":"info","timestamp":"2021-05-31T23:07:34.961Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T23:07:43.279Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T23:07:43.283Z"}
+{"message":"POST /auth/password_reset 200 3.609 ms","level":"info","timestamp":"2021-05-31T23:07:43.655Z"}
+{"message":"POST /auth/password_reset 200 0.967 ms","level":"info","timestamp":"2021-05-31T23:07:44.588Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T23:07:56.491Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T23:07:56.495Z"}
+{"message":"POST /auth/password_reset 200 4.354 ms","level":"info","timestamp":"2021-05-31T23:07:56.601Z"}
+{"message":"POST /auth/password_reset 200 0.717 ms","level":"info","timestamp":"2021-05-31T23:07:57.412Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T23:08:12.894Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T23:08:12.898Z"}
+{"message":"POST /auth/password_reset 200 3.219 ms","level":"info","timestamp":"2021-05-31T23:08:13.291Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T23:08:36.042Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T23:08:36.046Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T23:08:40.081Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T23:08:40.085Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T23:08:55.998Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T23:08:56.003Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T23:08:59.350Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T23:08:59.354Z"}
+{"message":"POST /auth/password_reset 200 3.502 ms","level":"info","timestamp":"2021-05-31T23:08:59.429Z"}
+{"message":"POST /auth/password_reset 200 0.84 ms","level":"info","timestamp":"2021-05-31T23:09:00.047Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T23:09:10.274Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T23:09:10.278Z"}
+{"message":"POST /auth/password_reset 200 3.114 ms","level":"info","timestamp":"2021-05-31T23:09:10.387Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T23:09:15.786Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T23:09:15.789Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T23:09:27.738Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T23:09:27.742Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T23:09:34.272Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T23:09:34.276Z"}
+{"message":"POST /auth/password_reset 200 3.428 ms","level":"info","timestamp":"2021-05-31T23:09:34.588Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T23:09:51.159Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T23:09:51.163Z"}
+{"message":"POST /auth/password_reset 200 3.384 ms","level":"info","timestamp":"2021-05-31T23:09:51.261Z"}
+{"message":"POST /auth/password_reset 200 0.738 ms","level":"info","timestamp":"2021-05-31T23:09:52.392Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T23:09:57.908Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T23:09:57.912Z"}
+{"message":"POST /auth/password_reset 200 3.296 ms","level":"info","timestamp":"2021-05-31T23:09:57.966Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T23:10:02.158Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T23:10:02.162Z"}
+{"message":"POST /auth/password_reset 200 3.391 ms","level":"info","timestamp":"2021-05-31T23:10:02.406Z"}
+{"message":"POST /auth/password_reset 200 0.79 ms","level":"info","timestamp":"2021-05-31T23:10:37.352Z"}
+{"message":"POST /auth/password_reset 200 0.594 ms","level":"info","timestamp":"2021-05-31T23:10:37.956Z"}
+{"message":"POST /auth/password_reset 200 0.55 ms","level":"info","timestamp":"2021-05-31T23:10:38.484Z"}

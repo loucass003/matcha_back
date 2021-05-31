@@ -50,6 +50,8 @@
     "@decorators/di": "^1.0.3",
     "@decorators/express": "^2.5.0",
     "@decorators/socket": "^3.2.0",
+    "@sendgrid/client": "^7.4.3",
+    "@sendgrid/mail": "^7.4.4",
     "argon2": "^0.27.2",
     "cors": "^2.8.5",
     "express": "^4.17.1",

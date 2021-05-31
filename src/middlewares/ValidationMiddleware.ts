@@ -1,18 +1,42 @@
 import { Middleware } from "@decorators/express";
 import { Request, Response, NextFunction } from "express";
 import { ValidationMiddlewareError } from "../errors/ValidationMiddlewareError";
+import { Serialize } from "../commons/serializer";
 import {
   ValidationError,
   ValidationErrorWithField,
-} from "../validation/ValidationError";
-import { Validator } from "../validation/Validator";
+} from "../commons/validation/ValidationError";
+import { Validator } from "../commons/validation/Validator";
+
+export type Rules = Record<string, Validator<any, any>> | Validator<any, any>;
 
 export interface RulesBase {
-  query?: Record<string, Validator<any, any>>;
-  body?: Record<string, Validator<any, any>>;
-  cookies?: Record<string, Validator<any, any>>;
-  headers?: Record<string, Validator<any, any>>;
-  params?: Record<string, Validator<any, any>>;
+  query?: Rules;
+  body?: Rules;
+  cookies?: Rules;
+  headers?: Rules;
+  params?: Rules;
+}
+
+function testValue(
+  validator: Validator<any, any>,
+  value: any,
+  key: string,
+  errors: ValidationError[]
+) {
+  try {
+    return validator(value);
+  } catch (error) {
+    if (!(error instanceof ValidationError)) {
+      throw error;
+    }
+    errors.push(new ValidationErrorWithField(`${key}`, error));
+    return value;
+  }
+}
+
+function isValidator(value: any) {
+  return !!value.and;
 }
 
 export function ValidationMiddleware(rules: RulesBase): any {
@@ -28,39 +52,27 @@ export function ValidationMiddleware(rules: RulesBase): any {
         params,
       } as Record<string, any>;
 
-      const errors = [];
+      const errors: ValidationError[] = [];
       for (const [key, value] of Object.entries(rules)) {
-        for (const [fieldName, rule] of Object.entries(value)) {
-          const testField = reqFields[key][fieldName];
-          try {
-            reqFields[key][fieldName] = (rule as Validator<any, any>)(
-              testField
-            );
-          } catch (error) {
-            if (!(error instanceof ValidationError)) {
-              throw error;
-            }
-            delete error.value;
-            if (error.reasons) {
-              if (Array.isArray(error.reasons)) {
-                error.reasons.forEach(
-                  (reason: ValidationError) => delete reason.value
-                );
-              } else {
-                Object.keys(error.reasons).forEach(
-                  (k: string | number) => delete error.reasons[k]
-                );
-              }
-            }
-            errors.push(
-              new ValidationErrorWithField(`${key}.${fieldName}`, error)
+        if (isValidator(value)) {
+          reqFields[key] = testValue(value, reqFields[key], `${key}`, errors);
+        } else {
+          for (const [fieldName, rule] of Object.entries(value)) {
+            const testField = reqFields[key][fieldName];
+            reqFields[key][fieldName] = testValue(
+              rule as Validator<any, any>,
+              testField,
+              `${key}.${fieldName}`,
+              errors
             );
           }
         }
       }
 
       if (errors.length > 0) {
-        new ValidationMiddlewareError(errors).send(res);
+        new ValidationMiddlewareError(
+          Serialize(errors, ["validation-middleware"])
+        ).send(res);
         return;
       }
 

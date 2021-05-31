@@ -13,10 +13,12 @@ export const {
   PORT,
   JWT_SECRET,
   POSTGRES_DSN,
+  SENDGRID_API_KEY,
 }: {
   PORT: number;
   JWT_SECRET: string;
   POSTGRES_DSN: string;
+  SENDGRID_API_KEY: string;
 } = process.env as any;
 
 export class Main {

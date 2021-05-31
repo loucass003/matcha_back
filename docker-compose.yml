@@ -23,6 +23,7 @@ services:
       - PORT=4000
       - JWT_SECRET=secret
       - POSTGRES_DSN=postgres://matcha:123456@db:5432/matcha
+      - SENDGRID_API_KEY=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
     volumes:
       - ./src:/home/node/app/src
       - ./logs:/home/node/app/logs

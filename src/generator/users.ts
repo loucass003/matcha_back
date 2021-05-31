@@ -13,14 +13,16 @@ export async function generateUsers(
     const firstname = faker.name.firstName();
     const lastname = faker.name.lastName();
     const password = await hashPassword(`0${firstname}Password`);
+    const email = faker.internet.email(
+      `${firstname.toLowerCase()}.${lastname.toLowerCase()}`
+    );
 
     const user = await new User({
       firstname,
       lastname,
       password,
-      email: faker.internet.email(
-        `${firstname.toLowerCase()}.${lastname.toLowerCase()}`
-      ),
+      email,
+      activated: true,
     }).insert(db);
     users.push(user);
   }
