@@ -18,7 +18,12 @@ import {
 } from "../commons/types/auth/login";
 import { createToken, verifyToken } from "../auth";
 import { IUserSession } from "../commons/types/user";
-import { ActivationMail, MailTemplateType, sendMail } from "../utils/email";
+import {
+  ActivationMail,
+  MailTemplateType,
+  ResetPasswordMail,
+  sendMail,
+} from "../utils/email";
 import {
   activationPostSchema,
   IActivatePost,
@@ -26,6 +31,7 @@ import {
 } from "../commons/types/auth/activate";
 import {
   IPasswordResetPost,
+  IPasswordResetResponse,
   passwordResetSchema,
 } from "../commons/types/auth/password-reset";
 import { ValidationMiddleware } from "../middlewares/ValidationMiddleware";
@@ -162,21 +168,53 @@ export class AuthController {
     } as IActivateResponse);
   }
 
-  @Post("/password_reset", [
+  @Post("/password-reset", [
     ValidationMiddleware({
       body: passwordResetSchema,
     }),
   ])
   async password_reset(
-    // @Request() { db }: AppRequest,
+    @Request() { db }: AppRequest,
     @Response() res: express.Response,
     @Body() { reset, email }: IPasswordResetPost
   ) {
     if (email) {
-      console.log("send mail");
+      const user = await User.fromEmail(db, email);
+      if (!user) {
+        new ResponseError(
+          ResponseErrorType.UserNotFound,
+          `User with email ${email} not found`,
+          Status.NotFound
+        ).send(res);
+        return;
+      }
+      const resetPasswordToken = createToken({ user: user.id });
+      sendMail<ResetPasswordMail>(
+        {
+          resetPasswordToken,
+          firstname: user.firstname,
+          templateId: MailTemplateType.ResetPassword,
+        },
+        user.email,
+        "Reset your password"
+      );
+      res.sendStatus(Status.OK);
     } else if (reset) {
-      console.log("reset", reset);
+      const tokenData = verifyToken(reset.token);
+      if (!tokenData) {
+        new ResponseError(
+          ResponseErrorType.UserInvalidResetPasswordToken,
+          `Invalid or expired token`,
+          Status.BadRequest
+        ).send(res);
+        return;
+      }
+      const user = await User.fromId(db, tokenData.data.user);
+      if (!user) return;
+      await user.update(db, { password: await hashPassword(reset.password) });
+      res.json({
+        token: createToken<IUserSession>(user.toSession()),
+      } as IPasswordResetResponse);
     }
-    res.sendStatus(200);
   }
 }

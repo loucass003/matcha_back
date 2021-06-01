@@ -818,3 +818,89 @@
 {"message":"POST /auth/password_reset 200 0.79 ms","level":"info","timestamp":"2021-05-31T23:10:37.352Z"}
 {"message":"POST /auth/password_reset 200 0.594 ms","level":"info","timestamp":"2021-05-31T23:10:37.956Z"}
 {"message":"POST /auth/password_reset 200 0.55 ms","level":"info","timestamp":"2021-05-31T23:10:38.484Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T23:38:51.443Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T23:38:51.447Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-05-31T23:48:58.376Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-05-31T23:48:58.380Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-06-01T02:16:03.581Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-06-01T02:16:03.585Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-06-01T02:16:24.892Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-06-01T02:16:24.895Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-06-01T02:17:08.478Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-06-01T02:17:08.482Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-06-01T02:17:37.447Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-06-01T02:17:37.451Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-06-01T02:17:55.320Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-06-01T02:17:55.324Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-06-01T02:18:42.859Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-06-01T02:18:42.862Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-06-01T02:18:59.153Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-06-01T02:18:59.157Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-06-01T02:20:44.566Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-06-01T02:20:44.570Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-06-01T02:20:55.403Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-06-01T02:20:55.407Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-06-01T02:22:00.605Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-06-01T02:22:00.609Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-06-01T02:22:05.773Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-06-01T02:22:05.777Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-06-01T02:22:41.675Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-06-01T02:22:41.679Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-06-01T02:23:53.971Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-06-01T02:23:53.975Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-06-01T02:23:56.273Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-06-01T02:23:56.277Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-06-01T02:24:01.703Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-06-01T02:24:01.707Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-06-01T02:24:08.528Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-06-01T02:24:08.532Z"}
+{"message":"POST /auth/password_reset 200 4.752 ms","level":"info","timestamp":"2021-06-01T02:24:47.139Z"}
+{"message":"POST /auth/password_reset 200 25.517 ms","level":"info","timestamp":"2021-06-01T02:25:04.242Z"}
+{"message":"POST /auth/password_reset 200 2.575 ms","level":"info","timestamp":"2021-06-01T02:26:09.987Z"}
+{"message":"POST /auth/password_reset 200 1.262 ms","level":"info","timestamp":"2021-06-01T02:27:14.529Z"}
+{"message":"POST /auth/password_reset 200 10.046 ms","level":"info","timestamp":"2021-06-01T02:27:19.479Z"}
+{"message":"POST /auth/login 200 4.847 ms","level":"info","timestamp":"2021-06-01T02:27:51.810Z"}
+{"message":"POST /auth/login 200 3.998 ms","level":"info","timestamp":"2021-06-01T02:27:58.834Z"}
+{"message":"POST /auth/register 200 10.512 ms","level":"info","timestamp":"2021-06-01T03:05:20.851Z"}
+{"message":"POST /auth/activate 200 4.095 ms","level":"info","timestamp":"2021-06-01T03:05:40.655Z"}
+{"message":"POST /auth/activate 200 0.455 ms","level":"info","timestamp":"2021-06-01T03:10:21.046Z"}
+{"message":"POST /auth/activate 200 0.356 ms","level":"info","timestamp":"2021-06-01T03:11:20.183Z"}
+{"message":"POST /auth/activate 200 0.411 ms","level":"info","timestamp":"2021-06-01T03:11:53.587Z"}
+{"message":"POST /auth/activate 200 0.613 ms","level":"info","timestamp":"2021-06-01T03:11:55.656Z"}
+{"message":"POST /auth/activate 200 0.391 ms","level":"info","timestamp":"2021-06-01T03:12:10.313Z"}
+{"message":"POST /auth/activate 200 0.437 ms","level":"info","timestamp":"2021-06-01T03:12:40.412Z"}
+{"message":"POST /auth/activate 200 0.398 ms","level":"info","timestamp":"2021-06-01T03:12:48.110Z"}
+{"message":"POST /auth/activate 200 0.421 ms","level":"info","timestamp":"2021-06-01T03:12:49.515Z"}
+{"message":"POST /auth/activate 200 0.407 ms","level":"info","timestamp":"2021-06-01T03:13:38.199Z"}
+{"message":"POST /auth/activate 200 0.353 ms","level":"info","timestamp":"2021-06-01T03:13:45.600Z"}
+{"message":"POST /auth/activate 200 0.389 ms","level":"info","timestamp":"2021-06-01T03:14:58.794Z"}
+{"message":"POST /auth/activate 200 0.478 ms","level":"info","timestamp":"2021-06-01T03:14:59.652Z"}
+{"message":"POST /auth/register 200 7.569 ms","level":"info","timestamp":"2021-06-01T03:40:58.104Z"}
+{"message":"POST /auth/register 200 6.462 ms","level":"info","timestamp":"2021-06-01T03:42:07.240Z"}
+{"message":"POST /auth/activate 200 2.427 ms","level":"info","timestamp":"2021-06-01T03:43:00.789Z"}
+{"message":"POST /auth/activate 200 0.378 ms","level":"info","timestamp":"2021-06-01T04:12:34.187Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-06-01T04:17:02.057Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-06-01T04:17:02.062Z"}
+{"message":"POST /auth/password-reset 200 7.524 ms","level":"info","timestamp":"2021-06-01T04:23:40.707Z"}
+{"message":"POST /auth/password-reset 200 1.517 ms","level":"info","timestamp":"2021-06-01T04:25:55.875Z"}
+{"message":"Connected to database","level":"info","timestamp":"2021-06-01T04:29:34.895Z"}
+{"message":"Connected on port 4000","level":"info","timestamp":"2021-06-01T04:29:34.899Z"}
+{"message":"POST /auth/password-reset 200 4.145 ms","level":"info","timestamp":"2021-06-01T04:29:36.961Z"}
+{"message":"POST /auth/password-reset 200 16.623 ms","level":"info","timestamp":"2021-06-01T04:29:48.707Z"}
+{"message":"POST /auth/password-reset 200 1.398 ms","level":"info","timestamp":"2021-06-01T04:50:11.702Z"}
+{"message":"POST /auth/password-reset 200 2.652 ms","level":"info","timestamp":"2021-06-01T04:50:31.514Z"}
+{"message":"POST /auth/password-reset 200 2.369 ms","level":"info","timestamp":"2021-06-01T04:51:10.288Z"}
+{"message":"POST /auth/password-reset 200 7.752 ms","level":"info","timestamp":"2021-06-01T04:51:35.528Z"}
+{"message":"POST /auth/login 200 4.89 ms","level":"info","timestamp":"2021-06-01T04:51:49.225Z"}
+{"message":"POST /auth/login 200 4.271 ms","level":"info","timestamp":"2021-06-01T04:52:22.873Z"}
+{"message":"POST /auth/login 200 3.871 ms","level":"info","timestamp":"2021-06-01T04:52:43.317Z"}
+{"message":"POST /auth/password-reset 200 2.449 ms","level":"info","timestamp":"2021-06-01T04:53:14.080Z"}
+{"message":"POST /auth/password-reset 200 5.073 ms","level":"info","timestamp":"2021-06-01T04:53:38.292Z"}
+{"message":"POST /auth/login 200 0.823 ms","level":"info","timestamp":"2021-06-01T04:53:48.837Z"}
+{"message":"POST /auth/login 200 4.298 ms","level":"info","timestamp":"2021-06-01T04:55:29.074Z"}
+{"message":"POST /auth/login 200 4.15 ms","level":"info","timestamp":"2021-06-01T04:55:42.982Z"}
+{"message":"POST /auth/login 200 3.942 ms","level":"info","timestamp":"2021-06-01T04:55:53.803Z"}
+{"message":"POST /auth/password-reset 200 2.22 ms","level":"info","timestamp":"2021-06-01T04:56:06.215Z"}
+{"message":"POST /auth/password-reset 200 6.682 ms","level":"info","timestamp":"2021-06-01T04:56:33.996Z"}
+{"message":"POST /auth/login 200 4.298 ms","level":"info","timestamp":"2021-06-01T04:56:49.034Z"}
+{"message":"POST /auth/login 200 4.108 ms","level":"info","timestamp":"2021-06-01T04:57:08.194Z"}

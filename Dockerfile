@@ -1,4 +1,4 @@
-FROM node:15
+FROM node:16
 
 RUN mkdir /home/node/app
 RUN mkdir -p /home/node/app/src/uploads

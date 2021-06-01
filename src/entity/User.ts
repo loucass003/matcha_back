@@ -36,17 +36,19 @@ export class User implements IUser {
     this.activated = activated;
   }
 
-  static async fromEmail(db: Client, email: string): Promise<User> {
+  static async fromEmail(db: Client, email: string): Promise<User | null> {
     const {
       rows: [user],
     } = await db.query("SELECT * FROM users WHERE email = $1", [email]);
+    if (!user) return null;
     return new User(user);
   }
 
-  static async fromId(db: Client, id: number): Promise<User> {
+  static async fromId(db: Client, id: number): Promise<User | null> {
     const {
       rows: [user],
     } = await db.query("SELECT * FROM users WHERE id = $1", [id]);
+    if (!user) return null;
     return new User(user);
   }
 

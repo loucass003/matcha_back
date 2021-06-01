@@ -3,6 +3,7 @@ import { SENDGRID_API_KEY } from "..";
 
 export enum MailTemplateType {
   Activation = "d-878484b4d48d48989edf0bf760086202",
+  ResetPassword = "d-398779d42f5b4c0dac51021d61bad81c",
 }
 
 export interface MailTemplate<> {
@@ -12,6 +13,11 @@ export interface MailTemplate<> {
 export interface ActivationMail extends MailTemplate {
   firstname: string;
   activationToken: string;
+}
+
+export interface ResetPasswordMail extends MailTemplate {
+  firstname: string;
+  resetPasswordToken: string;
 }
 
 export function sendMail<T extends MailTemplate>(
