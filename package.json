@@ -28,6 +28,7 @@
     "@types/jsonwebtoken": "^8.5.1",
     "@types/node": "^15.0.3",
     "@types/pg": "^8.6.0",
+    "@types/uuid": "^8.3.0",
     "@typescript-eslint/eslint-plugin": "^4.23.0",
     "@typescript-eslint/parser": "^4.23.0",
     "eslint": "^7.26.0",
@@ -50,6 +51,8 @@
     "@decorators/di": "^1.0.3",
     "@decorators/express": "^2.5.0",
     "@decorators/socket": "^3.2.0",
+    "@dropb/sse-channels": "^0.4.4",
+    "@google-cloud/pubsub": "^2.12.0",
     "@sendgrid/client": "^7.4.3",
     "@sendgrid/mail": "^7.4.4",
     "argon2": "^0.27.2",
@@ -58,8 +61,10 @@
     "faker": "^5.5.3",
     "jest-extended": "^0.11.5",
     "jsonwebtoken": "^8.5.1",
+    "node-postgres-named": "^2.4.1",
     "pg": "^8.6.0",
     "reflect-metadata": "^0.1.13",
+    "uuid": "^8.3.2",
     "winston": "^3.3.3"
   },
   "jest": {

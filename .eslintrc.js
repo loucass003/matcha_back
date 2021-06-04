@@ -32,7 +32,7 @@ module.exports = {
     "@typescript-eslint/no-loop-func": "off",
     "no-restricted-syntax": "off",
     "no-shadow": "off",
-    "@typescript-eslint/no-shadow": "error",
+    "@typescript-eslint/no-shadow": "off",
     "import/no-cycle": "off",
     "no-await-in-loop": "off",
   },

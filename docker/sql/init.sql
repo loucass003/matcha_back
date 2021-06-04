@@ -13,3 +13,11 @@ create table users
 create unique index users_id_uindex
     on users (id);
 
+create table message
+(
+    id      serial not null
+        constraint message_pk
+            primary key,
+    content varchar default 400
+);
+

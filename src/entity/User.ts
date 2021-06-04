@@ -4,31 +4,43 @@ import { Serialize } from "../commons/serializer";
 import { SerializeField } from "../commons/serializer/SerializeField";
 import { IUser, IUserSession } from "../commons/types/user";
 import { update } from "../utils/sql";
+import { Entity } from "../sql/decorators/Entity";
+import { Column } from "../sql/decorators/Column";
+import { ManyToMany } from "../sql/decorators/ManyToMany";
 
+@Entity({ tableName: "users" })
 export class User implements IUser {
   @SerializeField({ groups: ["session"] })
-  id?: number;
+  @Column()
+  id!: number;
 
   @SerializeField({ groups: ["session"] })
-  firstname: string;
+  @Column()
+  firstname!: string;
 
   @SerializeField()
-  lastname: string;
+  @Column()
+  lastname!: string;
 
   @SerializeField()
-  password: string;
+  @Column()
+  password!: string;
 
   @SerializeField()
-  email: string;
+  @Column()
+  email!: string;
 
   @SerializeField()
-  activated: boolean;
+  @Column()
+  activated!: boolean;
 
   @SerializeField()
-  activationToken?: string;
+  @ManyToMany(User)
+  @Column()
+  likes!: User[];
 
   constructor({ id, firstname, lastname, password, email, activated }: IUser) {
-    this.id = id;
+    this.id = id || -1;
     this.firstname = firstname;
     this.lastname = lastname;
     this.password = password;

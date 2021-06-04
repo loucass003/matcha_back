@@ -1,4 +1,5 @@
 import { AuthController } from "./AuthController";
+import { ChatController } from "./ChatController";
 import { TestController } from "./TestController";
 
-export default [TestController, AuthController];
+export default [TestController, AuthController, ChatController];
