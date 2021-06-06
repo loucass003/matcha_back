@@ -4,43 +4,32 @@ import { Serialize } from "../commons/serializer";
 import { SerializeField } from "../commons/serializer/SerializeField";
 import { IUser, IUserSession } from "../commons/types/user";
 import { update } from "../utils/sql";
-import { Entity } from "../sql/decorators/Entity";
-import { Column } from "../sql/decorators/Column";
-import { ManyToMany } from "../sql/decorators/ManyToMany";
+import { Conversation } from "./Conversation";
 
-@Entity({ tableName: "users" })
 export class User implements IUser {
-  @SerializeField({ groups: ["session"] })
-  @Column()
-  id!: number;
+  @SerializeField({ groups: ["session", "full", "chat"] })
+  id?: number;
 
-  @SerializeField({ groups: ["session"] })
-  @Column()
+  @SerializeField({ groups: ["session", "full", "chat"] })
   firstname!: string;
 
-  @SerializeField()
-  @Column()
+  @SerializeField({ groups: ["session", "full", "chat"] })
   lastname!: string;
 
-  @SerializeField()
-  @Column()
+  @SerializeField({ groups: ["never"] })
   password!: string;
 
-  @SerializeField()
-  @Column()
+  @SerializeField({ groups: ["session", "private", "full"] })
   email!: string;
 
-  @SerializeField()
-  @Column()
+  @SerializeField({ groups: ["full"] })
   activated!: boolean;
 
-  @SerializeField()
-  @ManyToMany(User)
-  @Column()
+  @SerializeField({ groups: ["full"] })
   likes!: User[];
 
   constructor({ id, firstname, lastname, password, email, activated }: IUser) {
-    this.id = id || -1;
+    this.id = id;
     this.firstname = firstname;
     this.lastname = lastname;
     this.password = password;
@@ -51,7 +40,9 @@ export class User implements IUser {
   static async fromEmail(db: Client, email: string): Promise<User | null> {
     const {
       rows: [user],
-    } = await db.query("SELECT * FROM users WHERE email = $1", [email]);
+    } = await db.query(`/* SQL */SELECT * FROM users WHERE email = $1`, [
+      email,
+    ]);
     if (!user) return null;
     return new User(user);
   }
@@ -59,9 +50,68 @@ export class User implements IUser {
   static async fromId(db: Client, id: number): Promise<User | null> {
     const {
       rows: [user],
-    } = await db.query("SELECT * FROM users WHERE id = $1", [id]);
+    } = await db.query(`/* SQL */SELECT * FROM users WHERE id = $1`, [id]);
     if (!user) return null;
     return new User(user);
+  }
+
+  /**
+   * Return all mached users from a user id
+   * @param id user id
+   */
+  static async allMatched(db: Client, id: number): Promise<User[]> {
+    const { rows: mached } = await db.query(
+      `/* SQL */
+        SELECT u.*
+        FROM users_likes l
+        INNER JOIN users u ON u.id = l."userId_1"
+        WHERE l."userId_0" = $1
+          and exists(SELECT 1
+                    FROM users_likes l2
+                    WHERE l2."userId_0" = l."userId_1"
+                      AND l2."userId_1" = l."userId_0"
+            )
+      `,
+      [id]
+    );
+    return mached.map((user) => new User(user));
+  }
+
+  static async conversations(db: Client, id: number): Promise<Conversation[]> {
+    const { rows: conversations } = await db.query(
+      Conversation.select(`/* SQL */ WHERE user_0 = $1 OR user_1 = $1`),
+      [id]
+    );
+    return conversations.map((conversation) =>
+      Conversation.fromRow(conversation)
+    );
+  }
+
+  async hasMatch(db: Client, withUser: number): Promise<User | undefined> {
+    if (!this.id) throw new Error("id is not set");
+    const matched = await User.allMatched(db, this.id);
+    return matched.find((matched) => matched.id === withUser);
+  }
+
+  /**
+   * Return all the likes of the current user
+   * @returns current user with likes set
+   */
+  async withLikes(db: Client): Promise<User> {
+    const {
+      rows: [likes],
+    } = await db.query(
+      `/* SQL */
+        SELECT
+          *
+        FROM users_likes u
+        INNER JOIN users l ON u.userId_1 = l.id
+        WHERE u.userId_0 = $1
+    `,
+      [this.id]
+    );
+    this.likes = likes.map((like: IUser) => new User(like));
+    return this;
   }
 
   async insert(db: Client): Promise<User> {

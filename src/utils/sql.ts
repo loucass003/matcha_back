@@ -20,3 +20,18 @@ export function update<T>(
     [...Object.values(values), ...Object.values(where)]
   );
 }
+
+export function selectJoin<T>(
+  table: string,
+  prefix: string,
+  fields: (keyof T)[]
+) {
+  return fields.map((f) => `${table}.${f} as "${prefix}_${f}"`).join(", ");
+}
+
+export function mapJoin<T>(prefix: string, fields: (keyof T)[], from: any) {
+  return Object.keys(from).reduce((obj, key) => {
+    const name = key.replace(`${prefix}_`, "");
+    return { ...obj, [name]: from[key] };
+  }, {} as T);
+}

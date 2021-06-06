@@ -7,9 +7,6 @@ import controllers from "./controllers";
 import { logger, loggerMiddleware } from "./logger";
 import { jwtSessionMiddleware } from "./auth/middleware";
 import { databaseMiddleware } from "./database/middleware";
-import { Message } from "./entity/Message";
-import { find } from "./sql/find";
-import { User } from "./entity/User";
 
 export { logger };
 
@@ -32,15 +29,11 @@ export class Main {
   public db_client?: Client;
 
   public async init(): Promise<void> {
-    console.log(Message);
-    // registerEntities([Message]);
     this.db_client = new Client({
       connectionString: POSTGRES_DSN,
     });
     await this.db_client.connect();
     logger.info("Connected to database");
-
-    find(this.db_client, User, { likes: { id: 1 } });
 
     this.app = express();
 
@@ -50,13 +43,6 @@ export class Main {
         origin,
       })
     );
-    // BIG HACK because the library we are useing does not support cors corectly
-    // so i have to inject the corect headers
-    (SSE as any).headers = {
-      ...(SSE as any).headers,
-      "access-control-allow-origin": origin,
-      "Access-Control-Allow-Credentials": true,
-    };
     this.app.use(express.json());
     this.app.use(databaseMiddleware(this.db_client));
     this.app.use(jwtSessionMiddleware());
