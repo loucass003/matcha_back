@@ -116,7 +116,7 @@ export class User implements IUser {
 
   async insert(db: Client): Promise<User> {
     const row = await db.query(
-      "INSERT INTO users (firstname, lastname, password, email, activated) VALUES ($1, $2, $3, $4, $5) RETURNING id",
+      `/* SQL */ INSERT INTO users (firstname, lastname, password, email, activated) VALUES ($1, $2, $3, $4, $5) RETURNING id`,
       [this.firstname, this.lastname, this.password, this.email, this.activated]
     );
     this.id = row.rows[0].id;

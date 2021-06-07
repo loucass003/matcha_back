@@ -7,6 +7,8 @@ create table users
     lastname  varchar(30)           not null,
     password  varchar(100)          not null,
     email     varchar(128)          not null,
+        constraint users_email_pk
+            primary key
     activated boolean default false not null
 );
 

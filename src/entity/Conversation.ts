@@ -1,7 +1,10 @@
 import { Client } from "pg";
 import { IConversation } from "../commons/types/conversation";
+import { IMessage } from "../commons/types/message";
+import { PaginatedResponse } from "../commons/types/PaginatedResponse";
 import { IUser } from "../commons/types/user";
 import { mapJoin, selectJoin } from "../utils/sql";
+import { Message } from "./Message";
 import { User } from "./User";
 
 export class Conversation implements IConversation {
@@ -18,6 +21,31 @@ export class Conversation implements IConversation {
     this.user_0 = user_0;
     this.user_1 = user_1;
     this.open = open;
+  }
+
+  async messages(
+    db: Client,
+    page: number,
+    itemsPerPages = 25
+  ): Promise<PaginatedResponse<Message>> {
+    const { rows: messages } = await db.query(
+      `/* SQL */
+        SELECT
+          *
+        FROM messages
+        WHERE messages.conversation = $1
+        ORDER BY date DESC
+        OFFSET $2
+        LIMIT $3
+    `,
+      [this.id, itemsPerPages * page, itemsPerPages + 1]
+    );
+    return {
+      data: messages.map((message: IMessage) => new Message(message)),
+      hasMore: messages.length > itemsPerPages,
+      page,
+      itemsPerPages,
+    };
   }
 
   static select(sqlprefix: string) {
@@ -50,7 +78,7 @@ export class Conversation implements IConversation {
   static async fromId(db: Client, conversationId: number) {
     const {
       rows: [conversation],
-    } = await db.query(this.select(`/* SQL */ WHERE id = $1`), [
+    } = await db.query(this.select(`/* SQL */ WHERE conversations.id = $1`), [
       conversationId,
     ]);
     if (!conversation) return null;

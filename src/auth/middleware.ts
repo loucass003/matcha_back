@@ -13,6 +13,7 @@ export function jwtSessionMiddleware(): any {
         console.log(tokenData);
         req.session = tokenData.data;
         // Create new token so it does not expires
+        console.log("SET NEW TOKEN");
         setAuthHeaders(res, createToken(tokenData.data));
       }
     }

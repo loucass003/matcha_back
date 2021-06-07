@@ -40,6 +40,7 @@ export class Main {
     const origin = "http://localhost:3000";
     this.app.use(
       cors({
+        exposedHeaders: ["Authorization"],
         origin,
       })
     );
