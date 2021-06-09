@@ -40,8 +40,10 @@ export class Conversation implements IConversation {
     `,
       [this.id, itemsPerPages * page, itemsPerPages + 1]
     );
+    const data = messages.map((message: IMessage) => Message.fromRow(message));
+    if (messages.length > itemsPerPages) data.splice(-1, 1);
     return {
-      data: messages.map((message: IMessage) => new Message(message)),
+      data,
       hasMore: messages.length > itemsPerPages,
       page,
       itemsPerPages,

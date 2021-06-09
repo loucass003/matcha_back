@@ -7,27 +7,25 @@ create table users
     lastname  varchar(30)           not null,
     password  varchar(100)          not null,
     email     varchar(128)          not null,
-        constraint users_email_pk
-            primary key
     activated boolean default false not null
 );
 
-create unique index users_id_uindex
-    on users (id);
+create unique index users_email_uindex
+    on users (email);
 
 create table messages
 (
-    id        serial                  not null
+    id           serial                  not null
         constraint message_pk
             primary key,
-    content   varchar   default 400,
-    user_from integer                 not null
+    content      varchar   default 400,
+    user_from    integer                 not null
         constraint messages_users_id_fk
             references users,
-    user_to   integer                 not null
+    conversation integer                 not null
         constraint messages_users_id_fk_2
             references users,
-    date      timestamp default now() not null
+    date         timestamp default now() not null
 );
 
 create table users_likes

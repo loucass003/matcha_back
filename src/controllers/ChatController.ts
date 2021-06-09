@@ -23,7 +23,7 @@ import {
   ISendMessagePost,
   sendMessageSchema,
 } from "../commons/types/chat";
-import { IDParamRule } from "../commons/types/common-rules";
+import { IDParamRule, PositiveNumberRule } from "../commons/types/common-rules";
 import { Serialize } from "../commons/serializer";
 import { Conversation } from "../entity/Conversation";
 
@@ -45,15 +45,35 @@ export class ChatController {
     const { session, db } = req;
     if (!session) return;
     const conversation = await Conversation.fromId(db, id);
-    const client = await SSE.subscribe(req, res, "chat");
+    const client = await SSE.subscribe(req, res, `chat_${id}`);
     if (!conversation) {
       sendPacket<ChatPacket>(
-        "chat",
+        `chat_${id}`,
         {
           type: "error",
           error: new ResponseError(
             ResponseErrorType.ConversationNotFound,
-            `conversation with id ${conversation} not found`,
+            `conversation with id ${id} not found`,
+            Status.NotFound
+          ),
+        },
+        [session.id]
+      );
+      SSE.unsubscribe(client);
+      return;
+    }
+
+    if (
+      conversation.user_0.id !== session.id &&
+      conversation.user_1.id !== session.id
+    ) {
+      sendPacket<ChatPacket>(
+        `chat_${id}`,
+        {
+          type: "error",
+          error: new ResponseError(
+            ResponseErrorType.UserNotInConversation,
+            `current user not in the conversation`,
             Status.NotFound
           ),
         },
@@ -63,7 +83,7 @@ export class ChatController {
       return;
     }
     sendPacket<ChatPacket>(
-      "chat",
+      `chat_${id}`,
       Serialize(
         {
           type: "init",
@@ -76,13 +96,41 @@ export class ChatController {
     );
   }
 
-  // @Get("/messages/:conversationId/:page", [
-  //   AuthCheck(),
-  //   ValidationMiddleware({
-  //     body: sendMessageSchema,
-  //   }),
-  // ])
-  // async messages() {}
+  @Get("/messages/:conversationId/:page", [
+    AuthCheck(),
+    ValidationMiddleware({
+      params: {
+        conversationId: IDParamRule,
+        page: PositiveNumberRule,
+      },
+    }),
+  ])
+  async messages(
+    @Request() { db, session }: AppRequest,
+    @Response() res: express.Response,
+    @Params("conversationId") conversationId: number,
+    @Params("page") page: number
+  ) {
+    if (!session) return;
+    const conv = await Conversation.fromId(db, conversationId);
+    if (!conv) {
+      new ResponseError(
+        ResponseErrorType.ConversationNotFound,
+        `conversation with id ${conversationId} not found`,
+        Status.NotFound
+      ).send(res);
+      return;
+    }
+    if (conv.user_0.id !== session.id && conv.user_1.id !== session.id) {
+      new ResponseError(
+        ResponseErrorType.UserNotInConversation,
+        `current user not in the conversation`,
+        Status.NotFound
+      ).send(res);
+      return;
+    }
+    res.json(await conv.messages(db, page));
+  }
 
   @Post("/send-message", [
     AuthCheck(),
@@ -120,7 +168,7 @@ export class ChatController {
     }).insert(db);
     if (conv.user_0.id && conv.user_1.id) {
       sendPacket<ChatPacket>(
-        "chat",
+        `chat_${conv.id}`,
         Serialize({
           type: "message",
           message: insertedMessage,
