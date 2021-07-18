@@ -1,37 +1,46 @@
-import {
-  Controller, Get, Query, Response,
-} from '@decorators/express';
-import express from 'express';
-import { ValidationMiddleware } from '../middlewares/ValidationMiddleware';
-import { required, str } from '../validation';
+import { Controller } from "@decorators/express";
+// import express from "express";
+// import { createToken, setAuthHeaders } from "../auth";
+// import { User } from "../entity/User";
+// import { ValidationMiddleware } from "../middlewares/ValidationMiddleware";
+// import { Serialize } from "../serializer";
+// import { AppRequest } from "../types";
+// import { Status } from "../types/http-status";
+// import { array, num, required, str } from "../validation";
 
-@Controller('/')
+@Controller("/")
 export class TestController {
-  @Get('/hello', [
-    ValidationMiddleware('CA MARCHE !!!!!!'),
-  ])
-  hello(
-    @Response() res: express.Response,
-    @Query('word') word: string,
-  ) {
-    const isValid = required()
-      .and(str.is())
-      .and(str.length(1, 3));
-    console.log(isValid(word));
-    res.send(`hello ${word}`);
-  }
-
-  @Get('/hello2', [
-    ValidationMiddleware('YAY'),
-  ])
-  hello2(
-    @Response() res: express.Response,
-    @Query('word') word: string,
-  ) {
-    const isValid = required()
-      .and(str.is())
-      .and(str.length(1, 3));
-    console.log(isValid(word));
-    res.send(`hello ${word}`);
-  }
+  // @Post("/hello/:id", [
+  //   ValidationMiddleware({
+  //     // params: {
+  //     //   username: required().and(str.is()).and(str.length(5, 30)),
+  //     // },
+  //     // body: {
+  //     //   data: required().and(array.is()).and(array.items(num.is())),
+  //     //   toto: required().and(str.is()).and(str.min(3)),
+  //     // },
+  //   }),
+  // ])
+  // async hello(
+  //   @Request() { db }: AppRequest,
+  //   @Response() res: express.Response
+  //   // @Body('data') data: number[],
+  //   // @Params('id') id: number,
+  // ) {
+  //   //const users = await User.all(db);
+  //   // console.log(users);
+  //   res.json(Serialize(users, ["public"]));
+  // }
+  // @Post("/login/:username")
+  // login(
+  //   @Response() res: express.Response,
+  //   @Params("username") username: string
+  // ) {
+  //   setAuthHeaders(res, createToken({ username }));
+  //   res.sendStatus(Status.OK);
+  // }
+  // @Get("/search/:username")
+  // search(@Response() req: express.Request) {
+  //   console.log(req.params);
+  // }
 }
